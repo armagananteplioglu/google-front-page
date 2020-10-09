@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 95%;
+    text-align: end;
+    padding: -1.5em 1em;
+}
+
+nav li {
+    display: inline;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: .7rem;
+}
+
+#apps {
+    width: 1.2em;
+    height: auto;
+    position: relative;
+    top: 3px;
+}
+
+#pp {
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    margin-top: 10em;
+}
+
+
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(.7);
+}
+
+input {
+    display: block;
+    margin: .8em auto;
+    border-radius: 20em;
+    height: 2em;
+    text-indent: 27px;
+}
+
+button {
+    display: inline-block;
+    height: 2.1em;
+}
+
+main p, a {
+    padding-top: 1.5em;
+    font-size: 0.7rem;
+}
+
+main img .mag {
+    width: 100%;
+}
+
+#mag {
+    position: absolute;
+    transform: scale(.06);
+    top: 13.1em;
+    left: 50%;
+    margin-left: -270px;
+}
+
+footer {
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+        "location location"
+        "bot-menu-left bot-menu-right";
+}
+
+.location {
+    grid-area: location;
+    font-weight: lighter;
+    font-size: 0.75rem;
+}
+
+.bot-menu-left {
+    grid-area: bot-menu-left;
+    display: inline-block;
+}
+
+.bot-menu-right {
+    grid-area: bot-menu-right;
+    padding-top: 0.5em;
+    display: inline;
+    text-align: right;
+}
+
+.location, .bot-menu-left, .bot-menu-right {
+    border-top: solid rgb(192, 190, 190);
+    border-width: 0.1px;
+    padding: 0.4em;
+    font-size: 0.75rem;
+}
